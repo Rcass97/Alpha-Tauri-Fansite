@@ -54,6 +54,10 @@ body {
 .card-text{
   color: black;
 }
+@font-face {
+  font-family: 'f1Font';
+  src: url('../Alpha-Tauri-Fansite/fonts/Formula1-Regular_web_0.ttf');
+}
 .col{
   width:  400px;
   height: 400px;
@@ -64,13 +68,13 @@ fieldset{
   border: 2px solid white;
   border-radius: 15px;
   font-size: 20px;
-  font-family: Noto Sans, sans-serif;
+  font-family: f1Font;
   background-color: rgba(0, 0, 0, .7);
 }
 legend{
   color: white;
   font-size: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: f1Font;
 }
 .bio{
   color:white;
@@ -85,23 +89,16 @@ legend{
   height: 200px;
   object-fit: contain;
 }
-.rowmine{
-  display:flex;
-}
 .column{
   flex: 1;
   padding: 5px;
+  margin: 0;
 }
 .driver{
   width:  300px;
   height: 300px;
   object-fit: contain;
   float: left;
-}
-.closed{
-  margin: 0 auto;
-  display: block;
-  padding: 20px;
 }
 .responsive-iframe{
   top: 0;
