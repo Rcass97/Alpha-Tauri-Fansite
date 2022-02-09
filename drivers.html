@@ -44,24 +44,30 @@
     }
 
     .desc {
-      text-align: left;
+      text-align: center;
       font-family: f1Font;
-      text-indent: 50px;
       font-size: 20px;
     }
 
     .behind {
       background-color: rgba(0, 0, 0, .7);
       border-radius: 10px;
+      width: 100%;
+      height: auto;
     }
 
     .bgcolor {
       background-color: #d4d4d4;
-
     }
 
     .headerfont {
       font-family: f1Font;
+    }
+
+    .driver {
+      width: 100%;
+      height: auto;
+      margin: auto;
     }
   </style>
 
@@ -84,13 +90,16 @@
         </nav>
       </div>
     </header>
-
+    <br>
     <div class="row justify-content-evenly">
-      <div class="card col-md-6 w-25 bgcolor" style="width: 20rem;">
-        <img src="../Alpha-Tauri-Fansite/images/GaslyFull.png">
+      <div class="card col-sm-6 bgcolor" style="width: 25rem;">
+        <img src="../Alpha-Tauri-Fansite/images/GaslyFull.png" class="driver">
         <div class="card-body bgcolor">
           <h5 class="card-title text-dark bgcolor headerfont">Pierre Gasly<img
               src="../Alpha-Tauri-Fansite/images/Flag_of_France.svg.png" width="121px" style="padding:5px"></h5>
+          <p class="card-text desc">
+            STATS
+          </p>
           <p class="card-text desc">
             Podiums: 3
           </p>
@@ -111,12 +120,16 @@
           </div>
         </div>
       </div>
-      <div class="card col-md-6 w-25 bgcolor" style="width: 20rem;">
-        <img src="../Alpha-Tauri-Fansite/images/TsunodaFull.png">
+      <br>
+      <div class="card col-sm-6 bgcolor" style="width: 25rem;">
+        <img src="../Alpha-Tauri-Fansite/images/TsunodaFull.png" class="driver">
         <div class="card-body bg-bgcolor">
           <h5 class="card-title text-dark bgcolor headerfont">Yuki Tsunoda<img
               src="../Alpha-Tauri-Fansite/images/1200px-Flag_of_Japan.svg.png" width="121px" style="padding:5px">
           </h5>
+          <p class="card-text desc">
+            STATS
+          </p>
           <p class="card-text desc">
             Podiums: NONE
           </p>
@@ -140,9 +153,12 @@
       </div>
     </div>
 
-
     <br>
+
     <div class="row behind">
+      <div class="column">
+        <img class="bottom_photos" src="../Alpha-Tauri-Fansite/images/cb26ca70-b349-44ce-b2a2-50ab6f12cfea.png" style="width:50%">
+      </div>
       <div class="column">
         <img class="bottom_photos" src="../Alpha-Tauri-Fansite/images/casio.png" style="width:50%">
       </div>
@@ -151,6 +167,9 @@
       </div>
       <div class="column">
         <img class="bottom_photos" src="../Alpha-Tauri-Fansite/images/Red-Honda-Emblem-1024x648.png" style="width:50%">
+      </div>
+      <div class="column">
+        <img class="bottom_photos" src="../Alpha-Tauri-Fansite/images/fantom-02-02.png" style="width:50%">
       </div>
     </div>
     <footer class="mt-auto text-white-50">
