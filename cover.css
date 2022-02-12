@@ -29,6 +29,9 @@ body {
 /*
  * Header
  */
+.nav{
+  padding-top: 14px;
+}
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
@@ -58,24 +61,6 @@ body {
   font-family: 'f1Font';
   src: url('../Alpha-Tauri-Fansite/fonts/Formula1-Regular_web_0.ttf');
 }
-.col{
-  width:  400px;
-  height: 400px;
-  object-fit: contain;
-  margin: auto;
-}
-fieldset{
-  border: 2px solid white;
-  border-radius: 15px;
-  font-size: 20px;
-  font-family: f1Font;
-  background-color: rgba(0, 0, 0, .7);
-}
-legend{
-  color: white;
-  font-size: 30px;
-  font-family: f1Font;
-}
 .bio{
   color:white;
   font-family: Noto Sans, sans-serif;
@@ -85,8 +70,8 @@ legend{
   text-indent: 50px;
 }
 .bottom_photos{
-  width:  200px;
-  height: 200px;
+  width:  150px;
+  height: 150px;
   object-fit: contain;
 }
 .column{

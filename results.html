@@ -7,7 +7,9 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
-  <title>AlphaTauri</title>
+  <title>AlphaTauri Results</title>
+  <link rel="icon" type="image/x-icon" href="../Alpha-Tauri-Fansite/favicon/android-chrome-512x512.png">
+  
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
   <link rel="stylesheet" href="cover.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,6 +25,16 @@
         font-size: 3.5rem;
       }
     }
+    @media (max-width: 768px){
+      .table{
+        zoom: 80%;
+      }
+    }
+
+    td, th{
+      vertical-align: middle;
+    }
+
 
     .bgimg {
       background-image: url("../Alpha-Tauri-Fansite/images/AT02_21080.jpg");
@@ -61,6 +73,14 @@
       overflow: hidden;
     }
 
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      animation: spin 1s linear infinite;
+    }
   </style>
 
 
@@ -83,7 +103,7 @@
       </div>
     </header>
     <br>
-    
+
     <div class="container-fluid">
       <h1 class="names">2021 Formula 1 Championship Season</h1>
       <div class="row justify-content-center">
@@ -122,7 +142,7 @@
       </div>
     </div>
     <footer class="mt-auto text-white-50">
-      <p>Made by Reed Cass</a>, using the <a href="https://getbootstrap.com/" class="text-white">Boostrap template</a>
+      <p>Made by Reed Cass, using the <a href="https://getbootstrap.com/" class="text-white">Boostrap template</a>
         <a href="https://twitter.com/mdo" class="text-white">by @mdo</a>.
       </p>
     </footer>
