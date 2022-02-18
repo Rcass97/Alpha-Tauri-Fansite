@@ -73,25 +73,49 @@
       font-family: f1Font;
       font-size: 25px;
       color: black;
+      background-color: #ECECEC;
+    }
+
+    .desc-car {
+      text-align: center;
+      font-family: f1Font;
+      font-size: 25px;
+      color: black;
       background-color: #FFFFFF;
     }
 
     .car-image {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-      width: 358px;
+
       height: auto;
     }
 
     .race-bg {
-      background-color: #FFFFFF;
+      background-color: #ECECEC;
       border-radius: 10px;
     }
 
-    h5{
+    h5 {
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
 
+    }
+
+    body {
+      animation: fadeInAnimation ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
   </style>
 
@@ -145,15 +169,22 @@
     </main>
     <div class="container-fluid">
       <div class="row justify-content-evenly">
-        <div class="col-sm-4">
-          <img class="d-block w-100 car-image" src="../Alpha-Tauri-Fansite/images/FLjWX3SWYAIFlST.jfif" alt="Car Image">
-          <h5 class="desc">The AT03 has been revealed!</h5>
+        <div class="col-sm-3">
+          <img class="d-block w-100 car-image" src="../Alpha-Tauri-Fansite/images/Block-2-Gallery_1-1440x923.jpg"
+            alt="Car Image">
+          <h5 class="desc-car">The AT03 has been revealed!</h5>
         </div>
-        <div class=" col-sm-4 race-bg">
+        <div class=" col-sm-3 race-bg" style="margin-bottom:8px;">
+          <img class="d-block w-100" src="../Alpha-Tauri-Fansite/images/Spain_Circuit.png">
+          <h5 class="desc">Barcelona Preseason Testing</h5>
+          <script class="63b8ed37c8504d5dfe04bc0509e8dd71"
+            src="https://w.promofeatures.com/js/timer/63b8ed37c8504d5dfe04bc0509e8dd71.js?v=1645155480"></script>
+        </div>
+        <div class=" col-sm-3 race-bg">
           <img class="d-block w-100" src="../Alpha-Tauri-Fansite/images/image.png">
-          <h5 class="card-title text-dark desc">Bahrain Grand Prix</h5>
-          <script class="4b26f4ca2c5a852743c1a8136aef77d5"
-            src="https://w.promofeatures.com/js/timer/4b26f4ca2c5a852743c1a8136aef77d5.js?v=1644291007"></script>
+          <h5 class="desc">Bahrain Grand Prix</h5>
+          <script class="07d868c7e88a31df436d4d253242bf83"
+            src="https://w.promofeatures.com/js/timer/07d868c7e88a31df436d4d253242bf83.js?v=1645155524"></script>
         </div>
       </div>
     </div>

@@ -37,7 +37,7 @@
 
 
     .bgimg {
-      background-image: url("../Alpha-Tauri-Fansite/images/AT02_21080.jpg");
+      background-image: url("../Alpha-Tauri-Fansite/images/gasly-e-meccanici.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -47,9 +47,9 @@
     }
 
     .table-dark {
-      --bs-table-bg: #d4d4d4;
-      --bs-table-striped-bg: #1b2838;
-      --bs-table-striped-color: #d4d4d4;
+      --bs-table-bg: #ECECEC;
+      --bs-table-striped-bg: #00293F;
+      --bs-table-striped-color: #ECECEC;
       --bs-table-active-bg: #373b3e;
       --bs-table-active-color: #fff;
       --bs-table-hover-bg: #323539;
@@ -59,7 +59,7 @@
     }
 
     .names {
-      background-color: #1b2838;
+      background-color: #00293F;
       font-family: f1Font;
     }
 
@@ -72,15 +72,22 @@
       font-family: f1Font;
       overflow: hidden;
     }
-
-    .loader {
-      border: 16px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 16px solid #3498db;
-      width: 120px;
-      height: 120px;
-      animation: spin 1s linear infinite;
+    body {
+      animation: fadeInAnimation ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
     }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
   </style>
 
 

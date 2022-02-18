@@ -49,7 +49,7 @@
     .desc {
       text-align: center;
       font-family: f1Font;
-      font-size: 15px;
+      font-size: 20px;
       color: black;
     }
 
@@ -64,7 +64,6 @@
     .behind {
       background-color: rgba(0, 0, 0, .7);
       height: auto;
-      border-radius: 10px;
     }
 
     .bgcolor {
@@ -73,9 +72,19 @@
 
     .headerfont {
       font-family: f1Font;
-      color: black;
     }
 
+    .driver {
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    .card {
+      margin-bottom: 45px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
 
     .driver-name {
       text-align: center;
@@ -85,9 +94,10 @@
     }
 
     .driver-bg {
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 41, 63, 1) 100%);
       transition: 0.3s;
-      object-fit: cover;
-      height: 675px;
+
     }
 
     .driver-bg:hover {
@@ -97,16 +107,6 @@
 
     h5 span {
       padding: 3px;
-    }
-
-    .driver-image {
-      width: 100%;
-      border-radius: 20px;
-    }
-
-    .desc-bg {
-      background-color: #ECECEC;
-      border-radius: 30px;
     }
     body {
       animation: fadeInAnimation ease 1s;
@@ -145,37 +145,41 @@
       </div>
     </header>
     <br>
-    <div class="container">
-      <div class="row justify-content-evenly">
-        <div class="col-3">
-          <img class="driver-bg driver-image" src="../Alpha-Tauri-Fansite/images/FLjkUDrXwAIohie.jfif">
-        </div>
-        <div class="col-3 desc-bg align-self-center" style="width:20%;">
-          <h5 class="headerfont">Pierre Gasly<img src="../Alpha-Tauri-Fansite/images/Flag_of_France.svg.png"
-              width="50px" style="padding:5px"></h5>
-          <p class="desc">
+    <div class="row justify-content-center">
+      <div class="card col-sm-6 bgcolor" style="width: 25rem;">
+        <img src="../Alpha-Tauri-Fansite/images/GaslyFull.png" class="driver">
+        <div class="card-body bgcolor">
+          <h5 class="card-title text-dark bgcolor headerfont">Pierre Gasly<img
+              src="../Alpha-Tauri-Fansite/images/Flag_of_France.svg.png" width="50px" style="padding:5px"></h5>
+          <p class="card-text desc">
             STATS
           </p>
-          <p class="desc">
+          <p class="card-text desc">
             Podiums: 3
           </p>
-          <p class="desc">
+          <p class="card-text desc">
             Total Points: 309
           </p>
-          <p class="desc">
+          <p class="card-text desc">
             Grand Prix entered: 86
           </p>
-          <p class="desc">
+          <p class="card-text desc">
             Highest Race Finish: 1st
           </p>
-          <p class="desc">
+          <p class="card-text desc">
             Highest Qualifying Position: 2nd
           </p>
-            <img src="../Alpha-Tauri-Fansite/images/gasly-2021-helmet-1.png" style="width:75%; padding:5px;">
+          <div class="column">
+            <img class="bottom_photos" src="../Alpha-Tauri-Fansite/images/gasly-2021-helmet-1.png" style="width:100%">
+          </div>
         </div>
-        <div class="col-3 desc-bg align-self-center" style="width:20%;">
-          <h5 class="headerfont">Yuki Tsunoda<img src="../Alpha-Tauri-Fansite/images/1200px-Flag_of_Japan.svg.png"
-              width="50px" style="padding:5px">
+      </div>
+      <br>
+      <div class="card col-sm-6 bgcolor" style="width: 25rem;">
+        <img src="../Alpha-Tauri-Fansite/images/TsunodaFull.png" class="driver">
+        <div class="card-body bg-bgcolor">
+          <h5 class="card-title text-dark bgcolor headerfont">Yuki Tsunoda<img
+              src="../Alpha-Tauri-Fansite/images/1200px-Flag_of_Japan.svg.png" width="50px" style="padding:5px">
           </h5>
           <p class="card-text desc">
             STATS
@@ -195,15 +199,16 @@
           <p class="card-text desc">
             Highest Qualifying Position: 7th
           </p>
-            <img src="../Alpha-Tauri-Fansite/images/2021-Yuki-Tsunoda-helmet.png" style="width:75%; padding:5px;">
-        </div>
-        <div class="col-3">
-          <img class="driver-bg driver-image" src="../Alpha-Tauri-Fansite/images/FLjkUDqXEAA9IDM.jfif">
+          <div class="column">
+            <img class="bottom_photos" src="../Alpha-Tauri-Fansite/images/2021-Yuki-Tsunoda-helmet.png"
+              style="width:100%">
+          </div>
         </div>
       </div>
-      </div>
-      <br>
-      <div class="fixed-bottom" style="position:relative;">
+    </div>
+    
+    <br>
+
       <div class="behind">
         <div class="row">
           <div class="col">
@@ -226,7 +231,7 @@
         </p>
       </footer>
     </div>
-  </div>
+
 
 
 
