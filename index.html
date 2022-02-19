@@ -117,6 +117,22 @@
         opacity: 1;
       }
     }
+
+    .driver-fade {
+            animation: fadeInAnimationDriver ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimationDriver {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
   </style>
 
 
@@ -143,7 +159,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade img-fluid" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block carouselimg" src="../Alpha-Tauri-Fansite/images/FGZW-eXXIAEzuuE-scaled.jpg"
+          <img class="d-block carouselimg driver-fade" src="../Alpha-Tauri-Fansite/images/FGZW-eXXIAEzuuE-scaled.jpg"
             alt="First slide">
         </div>
         <div class="carousel-item">
@@ -162,28 +178,30 @@
       </div>
     </div>
     <br>
-    <main class="px-3">
+    <main class="px-3 driver-fade">
       <h1>Scuderia AlphaTauri</h1>
-      <p class="lead">Learn more about RedBull's sister team, AlphaTauri. From drivers to latest race results this
-        website will provide you with everything you need to know about the team.</p>
+      <p class="lead">Scuderia AlphaTauri, or simply AlphaTauri, is an Italian Formula One racing team and constructor.
+        It is one of two Formula One constructors owned by Austrian beverage company Red Bull, the other being Red Bull
+        Racing. Learn more about RedBull's sister team, from drivers to latest race results this
+        website will provide you with everything you need to know about Scuderia AlphaTauri.</p>
     </main>
     <div class="container-fluid">
       <div class="row justify-content-evenly">
         <div class="col-lg-3">
-          <img class="d-block w-100 car-image" src="../Alpha-Tauri-Fansite/images/Block-2-Gallery_1-1440x923.jpg"
+          <img class="d-block w-100 car-image driver-fade" src="../Alpha-Tauri-Fansite/images/Block-2-Gallery_1-1440x923.jpg"
             alt="Car Image">
           <h5 class="desc-car">The AT03 has been revealed!</h5>
         </div>
         <div class=" col-lg-3 race-bg" style="margin-bottom:8px;">
-          <img class="d-block w-100" src="../Alpha-Tauri-Fansite/images/Spain_Circuit.png">
+          <img class="d-block w-100 driver-fade" src="../Alpha-Tauri-Fansite/images/Spain_Circuit.png">
           <h5 class="desc">Barcelona Preseason Testing</h5>
-          <script class="63b8ed37c8504d5dfe04bc0509e8dd71"
+          <script class="63b8ed37c8504d5dfe04bc0509e8dd71 driver-fade"
             src="https://w.promofeatures.com/js/timer/63b8ed37c8504d5dfe04bc0509e8dd71.js?v=1645155480"></script>
         </div>
         <div class=" col-lg-3 race-bg" style="margin-bottom:8px;">
-          <img class="d-block w-100" src="../Alpha-Tauri-Fansite/images/image.png">
+          <img class="d-block w-100 driver-fade" src="../Alpha-Tauri-Fansite/images/image.png">
           <h5 class="desc">Bahrain Grand Prix</h5>
-          <script class="07d868c7e88a31df436d4d253242bf83"
+          <script class="07d868c7e88a31df436d4d253242bf83 driver-fade"
             src="https://w.promofeatures.com/js/timer/07d868c7e88a31df436d4d253242bf83.js?v=1645155524"></script>
         </div>
       </div>

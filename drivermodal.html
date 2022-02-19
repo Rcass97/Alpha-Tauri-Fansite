@@ -126,11 +126,43 @@
             }
         }
 
+        .driver-fade {
+            animation: fadeInAnimationDriver ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimationDriver {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
         .driver-bg {
             background: #00293F;
             width: 100%;
             height: auto;
             color: #ECECEC;
+        }
+
+        .modal-content {
+            background-color: #ECECEC;
+        }
+
+        .modal-open {
+
+            padding-right: 0 !important;
+
+        }
+
+        html {
+
+            overflow-y: scroll !important;
+
         }
     </style>
 
@@ -156,14 +188,15 @@
         <br>
         <div class="container">
             <div class="row justify-content-evenly">
-                <div class="col-6">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gaslyModal"><img
-                            class="driver-bg driver-image"
-                            src="../Alpha-Tauri-Fansite/images/FLjkUDrXwAIohie.jfif"></button>
+                <div class="col-md-6">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gaslyModal">
+                        <img class="driver-bg driver-image driver-fade"
+                            src="../Alpha-Tauri-Fansite/images/FLjkUDrXwAIohie.jfif">
+                    </button>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tsuModal"><img
-                            class="driver-bg driver-image"
+                            class="driver-bg driver-image driver-fade"
                             src="../Alpha-Tauri-Fansite/images/FLjkUDqXEAA9IDM.jfif"></button>
                 </div>
             </div>
